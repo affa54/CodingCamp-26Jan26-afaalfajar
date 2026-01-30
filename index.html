@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Altro Gear | Outdoor Gear Rental</title>
+
+    <!-- Tailwind CDN (dipakai sedikit saja) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header class="site-header" id="home">
+      <div class="container header-inner">
+        <a class="brand" href="#home" aria-label="Altro Gear Home">
+          <span class="brand-mark" aria-hidden="true">AG</span>
+          <span class="brand-name">Altro Gear</span>
+        </a>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" type="button">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+
+        <nav class="nav" id="navMenu" aria-label="Main navigation">
+          <a class="nav-link" href="#home">Home</a>
+          <a class="nav-link" href="#profile">Our Profile</a>
+          <a class="nav-link" href="#portfolio">Portfolio</a>
+          <a class="nav-link" href="#message-us">Message Us</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="home-hero" aria-label="Home Banner">
+        <div class="home-hero-inner">
+          <div class="container home-hero-content">
+            <p class="home-greeting">Hello, <strong id="userName">Guest</strong>!</p>
+            <h1 class="home-title">Hi, Welcome to Altro Gear</h1>
+            <p class="home-subtitle">Explore Nature With Better Gear</p>
+
+            <div class="home-cta">
+              <a
+                href="#portfolio"
+                class="inline-flex items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-400 to-amber-300 px-5 py-3 font-extrabold text-slate-950"
+              >
+                Lihat Paket Gear
+              </a>
+              <a
+                href="#message-us"
+                class="inline-flex items-center justify-center rounded-2xl border border-white/20 bg-white/5 px-5 py-3 font-extrabold text-white hover:bg-white/10"
+              >
+                Tanya & Booking
+              </a>
+
+              <button class="home-change linklike" id="changeNameBtn" type="button">ganti nama</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="profile">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="section-title">Our Profile</h2>
+            <p class="section-desc">
+              Altro Gear adalah brand penyewaan alat outdoor untuk kamu yang mau eksplor tanpa harus beli semua gear dulu.
+              Fokus kami: gear layak pakai, jelas kondisinya, dan paket yang masuk akal.
+            </p>
+          </div>
+
+          <div class="grid">
+            <article class="card">
+              <h3 class="card-title">Vision</h3>
+              <p class="card-text">Menjadi pilihan utama sewa gear outdoor yang aman, rapi, dan terpercaya untuk semua level.</p>
+            </article>
+            <article class="card">
+              <h3 class="card-title">Mission</h3>
+              <p class="card-text">Bikin eksplorasi alam lebih aman dan nyaman lewat gear yang benar.</p>
+            </article>
+            <article class="card">
+              <h3 class="card-title">Quality Check</h3>
+              <p class="card-text">Setiap gear dicek sebelum & sesudah sewa. Kamu nggak “untung-untungan”.</p>
+            </article>
+            <article class="card">
+              <h3 class="card-title">Beginner Friendly</h3>
+              <p class="card-text">Bingung pilih? Kami bantu rekomendasi berdasarkan rute dan cuaca.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-muted" aria-label="Our Headquarter">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="section-title">Our Headquarter</h2>
+            <p class="section-desc">
+              Tiga titik pickup/return untuk area Jawa Tengah & DIY. Pilih yang paling dekat — semua titik bisa untuk booking, pickup, dan return.
+            </p>
+          </div>
+
+          <div class="hq-grid">
+            <article class="hq-card">
+              <div class="hq-photo hq-wonosobo" aria-hidden="true"></div>
+              <div class="hq-body">
+                <div class="hq-title-row">
+                  <h3 class="hq-title">Wonosobo</h3>
+                  <span class="hq-badge">Dieng Access</span>
+                </div>
+                <p class="hq-desc">Cocok buat trip Dieng dan sekitarnya. Pickup cepat untuk gear pendakian ringan.</p>
+                <div class="hq-meta-list">
+                  <div class="hq-meta-item"><span class="mkey">Jam</span><span class="mval">09.00–20.00</span></div>
+                  <div class="hq-meta-item"><span class="mkey">Hari</span><span class="mval">Senin–Minggu</span></div>
+                  <div class="hq-meta-item"><span class="mkey">Kontak</span><span class="mval">+62 8xx-xxxx-xxxx</span></div>
+                </div>
+                <div class="hq-actions">
+                  <a class="hq-btn" target="_blank" rel="noopener"
+                     href="https://www.google.com/maps/search/?api=1&query=Alun-Alun%20Wonosobo">Open Maps</a>
+                  <a class="hq-btn secondary" href="#message-us">Booking</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="hq-card">
+              <div class="hq-photo hq-temanggung" aria-hidden="true"></div>
+              <div class="hq-body">
+                <div class="hq-title-row">
+                  <h3 class="hq-title">Temanggung</h3>
+                  <span class="hq-badge">Sindoro–Sumbing</span>
+                </div>
+                <p class="hq-desc">Hub trip gunung. Cocok untuk paket summit-ready dan perlengkapan safety.</p>
+                <div class="hq-meta-list">
+                  <div class="hq-meta-item"><span class="mkey">Jam</span><span class="mval">10.00–19.00</span></div>
+                  <div class="hq-meta-item"><span class="mkey">Hari</span><span class="mval">Senin–Sabtu</span></div>
+                  <div class="hq-meta-item"><span class="mkey">Kontak</span><span class="mval">+62 8xx-xxxx-xxxx</span></div>
+                </div>
+                <div class="hq-actions">
+                  <a class="hq-btn" target="_blank" rel="noopener"
+                     href="https://www.google.com/maps/search/?api=1&query=Alun-Alun%20Temanggung">Open Maps</a>
+                  <a class="hq-btn secondary" href="#message-us">Booking</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="hq-card">
+              <div class="hq-photo hq-jogja" aria-hidden="true"></div>
+              <div class="hq-body">
+                <div class="hq-title-row">
+                  <h3 class="hq-title">Jogja</h3>
+                  <span class="hq-badge">Main Pickup</span>
+                </div>
+                <p class="hq-desc">Titik utama untuk konsultasi. Paling lengkap untuk camping set & paket keluarga.</p>
+                <div class="hq-meta-list">
+                  <div class="hq-meta-item"><span class="mkey">Jam</span><span class="mval">09.00–21.00</span></div>
+                  <div class="hq-meta-item"><span class="mkey">Hari</span><span class="mval">Senin–Minggu</span></div>
+                  <div class="hq-meta-item"><span class="mkey">Kontak</span><span class="mval">+62 8xx-xxxx-xxxx</span></div>
+                </div>
+                <div class="hq-actions">
+                  <a class="hq-btn" target="_blank" rel="noopener"
+                     href="https://www.google.com/maps/search/?api=1&query=Tugu%20Jogja">Open Maps</a>
+                  <a class="hq-btn secondary" href="#message-us">Booking</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio (tetap sama) -->
+      <section class="section" id="portfolio">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="section-title">Portfolio</h2>
+            <p class="section-desc">
+              Paket sewa populer yang paling sering dipakai. Klik “Lihat Detail” untuk info lengkap — hanya satu paket yang bisa terbuka.
+            </p>
+          </div>
+
+          <div class="grid">
+            <article class="card card-media card-hover">
+              <div class="media media-1" aria-hidden="true"></div>
+
+              <div class="p-top">
+                <h3 class="card-title">Hike Starter Pack</h3>
+                <span class="p-badge">Best for Beginner</span>
+              </div>
+
+              <p class="card-text">Ringkas dan aman untuk day hike atau 2D1N ringan.</p>
+
+              <div class="p-row">
+                <div class="p-price">
+                  <span class="p-from">Mulai dari</span>
+                  <span class="p-value">Rp 75.000</span>
+                  <span class="p-per">/hari</span>
+                </div>
+                <span class="p-stock ok">Ready</span>
+              </div>
+
+              <ul class="p-list">
+                <li>Daypack 20–30L</li>
+                <li>Trekking pole</li>
+                <li>Rain cover</li>
+                <li>Mini first-aid</li>
+              </ul>
+
+              <div class="p-actions">
+                <a class="p-btn" href="#message-us">Rent Now</a>
+                <button class="p-btn secondary detail-toggle" type="button" aria-expanded="false">Lihat Detail</button>
+              </div>
+
+              <div class="p-detail-collapse" aria-hidden="true">
+                <div class="p-detail-body">
+                  <div class="p-detail-grid">
+                    <div><span class="dkey">Durasi rekomendasi</span><span class="dval">1–2 hari</span></div>
+                    <div><span class="dkey">Deposit</span><span class="dval">Rp 100.000</span></div>
+                    <div><span class="dkey">Cocok untuk</span><span class="dval">Bukit, jalur ringan</span></div>
+                    <div><span class="dkey">Catatan</span><span class="dval">Bisa upgrade headlamp + jaket</span></div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="card card-media card-hover">
+              <div class="media media-2" aria-hidden="true"></div>
+
+              <div class="p-top">
+                <h3 class="card-title">Camping Comfort Pack</h3>
+                <span class="p-badge warm">Most Rented</span>
+              </div>
+
+              <p class="card-text">Paket lengkap buat camping nyaman, cocok pemula sampai keluarga.</p>
+
+              <div class="p-row">
+                <div class="p-price">
+                  <span class="p-from">Mulai dari</span>
+                  <span class="p-value">Rp 160.000</span>
+                  <span class="p-per">/hari</span>
+                </div>
+                <span class="p-stock mid">Limited</span>
+              </div>
+
+              <ul class="p-list">
+                <li>Tenda 2–4 orang</li>
+                <li>Matras + sleeping bag</li>
+                <li>Lampu camping</li>
+                <li>Cooking set</li>
+              </ul>
+
+              <div class="p-actions">
+                <a class="p-btn" href="#message-us">Rent Now</a>
+                <button class="p-btn secondary detail-toggle" type="button" aria-expanded="false">Lihat Detail</button>
+              </div>
+
+              <div class="p-detail-collapse" aria-hidden="true">
+                <div class="p-detail-body">
+                  <div class="p-detail-grid">
+                    <div><span class="dkey">Durasi rekomendasi</span><span class="dval">1–3 hari</span></div>
+                    <div><span class="dkey">Deposit</span><span class="dval">Rp 200.000</span></div>
+                    <div><span class="dkey">Cocok untuk</span><span class="dval">Camping ground, tepi danau</span></div>
+                    <div><span class="dkey">Catatan</span><span class="dval">Bisa tambah kompor & gas</span></div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="card card-media card-hover">
+              <div class="media media-3" aria-hidden="true"></div>
+
+              <div class="p-top">
+                <h3 class="card-title">Summit Ready Pack</h3>
+                <span class="p-badge cold">Cold Weather</span>
+              </div>
+
+              <p class="card-text">Untuk pendakian yang butuh perlengkapan safety dan cuaca dingin.</p>
+
+              <div class="p-row">
+                <div class="p-price">
+                  <span class="p-from">Mulai dari</span>
+                  <span class="p-value">Rp 190.000</span>
+                  <span class="p-per">/hari</span>
+                </div>
+                <span class="p-stock ok">Ready</span>
+              </div>
+
+              <ul class="p-list">
+                <li>Carrier 50–60L</li>
+                <li>Jaket + thermal layer</li>
+                <li>Headlamp</li>
+                <li>Emergency kit</li>
+              </ul>
+
+              <div class="p-actions">
+                <a class="p-btn" href="#message-us">Rent Now</a>
+                <button class="p-btn secondary detail-toggle" type="button" aria-expanded="false">Lihat Detail</button>
+              </div>
+
+              <div class="p-detail-collapse" aria-hidden="true">
+                <div class="p-detail-body">
+                  <div class="p-detail-grid">
+                    <div><span class="dkey">Durasi rekomendasi</span><span class="dval">2–4 hari</span></div>
+                    <div><span class="dkey">Deposit</span><span class="dval">Rp 250.000</span></div>
+                    <div><span class="dkey">Cocok untuk</span><span class="dval">Sindoro, Sumbing, jalur dingin</span></div>
+                    <div><span class="dkey">Catatan</span><span class="dval">Opsional: gaiter & rain pants</span></div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Message Us (yang kamu screenshot) -->
+      <section class="section section-muted" id="message-us" aria-label="Message Us">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="section-title">Message Us</h2>
+            <p class="section-desc">Isi form untuk menghubungi Altro Gear.</p>
+          </div>
+
+          <div class="message-layout">
+            <form class="form card form-card" id="messageForm" novalidate>
+              <div class="field">
+                <label class="form-label" for="name">Name</label>
+                <input class="form-input" id="name" name="name" type="text" placeholder="Nama lengkap" autocomplete="name" />
+                <small class="error" id="errName"></small>
+              </div>
+
+              <div class="field">
+                <label class="form-label" for="dob">Date of Birth</label>
+                <input class="form-input" id="dob" name="dob" type="date" />
+                <small class="error" id="errDob"></small>
+              </div>
+
+              <fieldset class="field fieldset">
+                <legend class="form-label">Gender</legend>
+                <div class="radio-row">
+                  <label class="radio">
+                    <input type="radio" name="gender" value="Male" />
+                    <span>Male</span>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="gender" value="Female" />
+                    <span>Female</span>
+                  </label>
+                </div>
+                <small class="error" id="errGender"></small>
+              </fieldset>
+
+              <div class="field">
+                <label class="form-label" for="message">Message</label>
+                <textarea
+                  class="form-input form-textarea"
+                  id="message"
+                  name="message"
+                  rows="6"
+                  placeholder="Contoh: Saya mau sewa Camping Comfort Pack untuk tanggal ..."
+                ></textarea>
+                <small class="error" id="errMessage"></small>
+              </div>
+
+              <button class="btn-submit" type="submit">Submit</button>
+            </form>
+
+            <aside class="card output" id="outputPanel" aria-label="Form Output" aria-hidden="true">
+              <div class="output-head">
+                <div>
+                  <h3 class="card-title">Output</h3>
+                  <p class="output-time">Current time: <strong id="currentTime">-</strong></p>
+                </div>
+
+                <button class="output-close" id="outputClose" type="button" aria-label="Close output">✕</button>
+              </div>
+
+              <div class="output-body">
+                <div class="kv"><span class="k">Name</span><span class="v" id="outName">-</span></div>
+                <div class="kv"><span class="k">Date of Birth</span><span class="v" id="outDob">-</span></div>
+                <div class="kv"><span class="k">Gender</span><span class="v" id="outGender">-</span></div>
+                <div class="kv kv-message"><span class="k">Message</span><span class="v" id="outMessage">-</span></div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="overlay" id="outputOverlay" aria-hidden="true"></div>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>© <span id="year">2026</span> Altro Gear. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

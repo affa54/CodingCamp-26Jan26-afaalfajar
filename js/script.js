@@ -37,13 +37,11 @@ function clearError(inputEl, errEl) {
   inputEl.classList.remove("input-error");
 }
 
-/* Footer year */
 (function setYear() {
   const y = $("year");
   if (y) y.textContent = String(new Date().getFullYear());
 })();
 
-/* Mobile nav */
 const navToggle = $("navToggle");
 const navMenu = $("navMenu");
 if (navToggle && navMenu) {
@@ -61,7 +59,6 @@ if (navToggle && navMenu) {
   });
 }
 
-/* Username in hero */
 const userNameEl = $("userName");
 const changeNameBtn = $("changeNameBtn");
 
@@ -86,7 +83,6 @@ if (changeNameBtn) {
   });
 }
 
-/* Current time */
 const currentTimeEl = $("currentTime");
 function tickTime() {
   if (currentTimeEl) currentTimeEl.textContent = formatNow();
@@ -94,7 +90,6 @@ function tickTime() {
 tickTime();
 setInterval(tickTime, 1000);
 
-/* Output popup controls */
 const overlay = $("outputOverlay");
 const outputPanel = $("outputPanel");
 const outputClose = $("outputClose");
@@ -119,7 +114,6 @@ document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") closeOutputPopup();
 });
 
-/* Form validation + output */
 const form = $("messageForm");
 const nameInput = $("name");
 const dobInput = $("dob");
@@ -203,7 +197,6 @@ if (form) {
   });
 }
 
-/* Portfolio detail toggle */
 function closePortfolioDetail(card) {
   const btn = card.querySelector(".detail-toggle");
   const panel = card.querySelector(".p-detail-collapse");
